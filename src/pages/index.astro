@@ -3,6 +3,10 @@ import Layout from '../layouts/Layout.astro';
 ---
 
   <script>
+
+	window.addEventListener("load", () => {
+		document.body.classList.add("bg-loaded");
+	});
     // Función del contador regresivo
     function updateCountdown() {
       const targetDate = new Date('November 19, 2026 00:00:00').getTime();
