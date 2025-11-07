@@ -3,10 +3,6 @@ import Layout from '../layouts/Layout.astro';
 ---
 
   <script>
-
-	window.addEventListener("load", () => {
-		document.body.classList.add("bg-loaded");
-	});
     // Función del contador regresivo
     function updateCountdown() {
       const targetDate = new Date('November 19, 2026 00:00:00').getTime();
@@ -114,30 +110,6 @@ import Layout from '../layouts/Layout.astro';
     padding: 2rem 1rem;
   }
 
-  /* --- EFECTOS DE FONDO --- */
-  .glow-circle-1,
-  .glow-circle-2 {
-    position: absolute;
-    width: 20rem;
-    height: 20rem;
-    border-radius: 50%;
-    filter: blur(80px);
-    animation: pulse-glow 3s ease-in-out infinite;
-    pointer-events: none;
-  }
-
-  .glow-circle-1 {
-    top: 5rem;
-    left: 20%;
-    background: rgba(255, 140, 66, 0.25);
-  }
-
-  .glow-circle-2 {
-    bottom: 5rem;
-    right: 20%;
-    background: rgba(255, 140, 66, 0.15);
-    animation-delay: 1.5s;
-  }
 
   @keyframes pulse-glow {
     0%, 100% {
